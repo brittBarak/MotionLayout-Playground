@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="PhoneCall">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/phone_call_1"
+                    android:title="Phone Call Step 1" />
+
+                <item
+                    android:id="@+id/phone_call_2"
+                    android:title="Phone Call Step 2" />
+
+                <item
+                    android:id="@+id/phone_call_3"
+                    android:title="Phone Call Step 3" />
+
+                <item
+                    android:id="@+id/phone_call_4"
+                    android:title="Phone Call Step 4" />
+
+                <item
+                    android:id="@+id/phone_call_5"
+                    android:title="Phone Call Step 5" />
+
+                <!--<item-->
+                <!--android:id="@+id/phone_call_6"-->
+                <!--android:title="Phone Call Step 6" />-->
+                <!--<item-->
+                <!--android:id="@+id/phone_call_7"-->
+                <!--android:title="Phone Call Step 7" />-->
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Tabs">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tabs_1"
+                    android:title="Tabs Step 1" />
+
+                <item
+                    android:id="@+id/tabs_2"
+                    android:title="Tabs Step 2" />
+
+                <item
+                    android:id="@+id/tabs_3"
+                    android:title="Tabs Step 3" />
+
+                <item
+                    android:id="@+id/tabs_4"
+                    android:title="Tabs Step 4" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Play">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/play_one_star"
+                    android:title="Play One Star" />
+
+                <item
+                    android:id="@+id/play_three_stars"
+                    android:title="Play Three Star" />
+
+                <item
+                    android:id="@+id/play_cycle"
+                    android:title="Play Cycle" />
+
+                <!--<item-->
+                    <!--android:id="@+id/recyclerview_1"-->
+                    <!--android:title="RecyclerView Step 1" />-->
+
+                <item
+                    android:id="@+id/incoming_call_1"
+                    android:title="Incoming Call Step 1" />
+
+            </group>
+        </menu>
+    </item>
+
+    <!--<item android:title="Incoming">-->
+        <!--<menu>-->
+            <!--<group android:checkableBehavior="single">-->
+                <!--<item-->
+                    <!--android:id="@+id/incoming_call_1"-->
+                    <!--android:title="Incoming Call Step 1" />-->
+
+            <!--</group>-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_camera"-->
+    <!--android:title="Import" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_gallery"-->
+    <!--android:title="Gallery" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_slideshow"-->
+    <!--android:title="Slideshow" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_manage"-->
+    <!--android:title="Tools" />-->
+    <!--</group>-->
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

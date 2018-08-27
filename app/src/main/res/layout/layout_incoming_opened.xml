@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorAccent"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/incall_btn_video"
+        motion:layout_constraintBottom_toTopOf="@+id/button"
+        motion:layout_constraintEnd_toEndOf="@+id/button"
+        motion:layout_constraintStart_toStartOf="@+id/button" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/incoming_call_btn_reply_message"
+        motion:layout_constraintBottom_toBottomOf="@+id/button"
+        motion:layout_constraintStart_toEndOf="@+id/button"
+        motion:layout_constraintTop_toTopOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/incoming_call_btn_remind"
+        motion:layout_constraintEnd_toEndOf="@+id/button"
+        motion:layout_constraintStart_toStartOf="@+id/button"
+        motion:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:padding="20dp"
+        android:rotation="140"
+        android:src="@drawable/ic_phone_black_24dp"
+        motion:layout_constraintBottom_toBottomOf="@+id/button"
+        motion:layout_constraintEnd_toStartOf="@+id/button"
+        motion:layout_constraintTop_toTopOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/incoming_call_btn_answer_main"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="parent"
+        motion:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Motion Layout</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--Vonage-->
+    <string name="group_type_message_hint">Type a message</string>
+
+    <string name="group_type_message_removed_hint">You were removed from this group</string>
+    <string name="sms_is_not_supported_hint">SMS is not supported</string>
+    <string name="load_earlier_messages">Load Earlier Messages</string>
+
+    <string name="title_activity_group_info">GroupInfoActivity</string>
+    <string name="title_activity_transparent_delete_group_action">TransparentDeleteGroupActionActivity</string>
+
+    <plurals name="too_many_attachments_dialog_message">
+        <item quantity="one">You can only share one item at a time.</item>
+        <item quantity="other">You can only share up to %d items at a time.</item>
+    </plurals>
+    <string name="too_many_attachments_dialog_title">Limit Exceeded</string>
+
+    <string name="attachments_dialog_100mb_limit_title">File Size Limit</string>
+    <string name="attachments_dialog_100mb_limit_message">Can\'t share files over %s.</string>
+
+    <string name="attachments_dialog_mixed_title">Pending Item</string>
+    <string name="attachments_dialog_mixed_message">There is at least one item waiting to be sent</string>
+
+    <string name="attachments_dialog_type_limit_title">File not supported</string>
+    <string name="attachments_dialog_type_limit_message">This file can\’t be sent.\nCurrently supporting only documents files as attachment</string>
+
+    <string name="attachment_type_image">Image</string>
+    <string name="attachment_type_document">Document</string>
+
+    <string name="whats_new_attachments_title">Send Photos Instantly</string>
+    <string name="whats_new_attachments_sub_title">Sharing photos with your colleagues has never been easier</string>
+    <string name="whats_new_attachments_settings">* Media download configurations is under messages settings.</string>
+    <string name="whats_new_attachments_image">Attachments</string>
+    <string name="whats_new_attachments_close_button_description">Close</string>
+    <string name="save_image_menu_item">Save image</string>
+    <string name="image_saved_message">Image saved</string>
+    <string name="document_saved_message">Document saved</string>
+    <string name="image_already_saved">Already saved</string>
+
+    <string name="unread_badge_limitation_string">99</string>
+    <string name="activity_group_create_name_this_group_chat">Name this group chat</string>
+
+    <string name="toast_attachments_no_file_viewer">No application was found to view this file</string>
+    <string name="toast_attachments_no_cloud_support">Sending cloud files is not supported</string>
+    <string name="toast_attachments_error_loading_file">Error loading file</string>
+    <string name="toast_attachments_file_already_added">Attachment has already been added</string>
+
+    <string name="progress_dialog_please_wait">@string/general_please_wait</string>
+
+    <string name="contacts_invite_a_team_member">Invite a Team Member</string>
+    <string name="media_tap_select">"Tap to select"</string>
+    <string name="sms_not_supported_in_region">SMS is not supported\nin your region</string>
+    <string name="read_more_link_text">Read more</string>
+    <string name="sms_is_not_available_image_description">SMS is not available image view</string>
+
+
+    <string name="general_OK">OK</string>
+    <string name="general_Error">Error</string>
+    <string name="general_Got_it">Got it</string>
+    <string name="general_Cancel">Cancel</string>
+    <string name="general_Unknown">Unknown</string>
+    <string name="general_Blocked">Blocked</string>
+    <string name="general_Settings">Settings</string>
+    <string name="general_Voicemail">Voicemail</string>
+    <string name="general_please_wait">Please wait…</string>
+    <string name="general_network_error">Network Error</string>
+    <string name="general_no_internet_connection">No Internet Connection</string>
+    <string name="general_something_went_wrong">Something went wrong</string>
+    <string name="general_please_try_again_later">Please try again later.</string>
+
+    <!--days of the week-->
+    <string name="general_Today">Today</string>
+    <string name="general_Yesterday">Yesterday</string>
+    <string name="general_Sunday">Sunday</string>
+    <string name="general_Monday">Monday</string>
+    <string name="general_Tuesday">Tuesday</string>
+    <string name="general_Wednesday">Wednesday</string>
+    <string name="general_Thursday">Thursday</string>
+    <string name="general_Friday">Friday</string>
+    <string name="general_Saturday">Saturday</string>
+
+    <string-array name="general_days">
+        <!--keep this order-->
+        <item>@string/general_Today</item>
+        <item>@string/general_Sunday</item>
+        <item>@string/general_Monday</item>
+        <item>@string/general_Tuesday</item>
+        <item>@string/general_Wednesday</item>
+        <item>@string/general_Thursday</item>
+        <item>@string/general_Friday</item>
+        <item>@string/general_Saturday</item>
+        <item>@string/general_Yesterday</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MotionLayout Playground</string>
+    <string name="nav_header_subtitle">\@brittBarak</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

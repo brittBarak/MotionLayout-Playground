@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="vonage_button_pressed">#80e6e6e6</color>
+    <color name="messaging_row_background">#ffffffff</color>
+
+    <color name="tab_unselected_color">#868686</color>
+    <color name="tab_selected_color">#0794e8</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="ToolTipTransparent">#66000000</color>
+    <color name="pressed_dialer_button">#007ac2</color>
+
+    <color name="background_grey">#fafafa</color>
+
+    <color name="main_tool_bar_color">#004e70</color>
+
+    <color name="hint_color">#80a6b7</color>
+
+
+    <color name="item_seperator_color">#eaeaea</color>
+
+    <color name="background_black">#000</color>
+
+    <color name="contact_details_separator_line_color">#E4E4E4</color>
+    <color name="contact_details_item_data_color">#202020</color>
+    <color name="contact_details_card_background_color">#FFFFFF</color>
+    <color name="contact_details_suspected_spam_title_and_number">#f55868</color>
+
+    <!--unify inbox colors-->
+    <color name="contact_details_history_info_content_color_regular">#9b9b9b</color>
+    <color name="unify_inbox_info_missed_call_color">#e33427</color>
+    <color name="unify_inbox_info_time_stamp_unread_color">#0082d0</color>
+    <color name="unify_inbox_info_time_stamp_read_color">#9c9c9c</color>
+
+    <color name="carrier_voice_menu_color">#99000000</color>
+
+    <color name="in_conversation_sender_self">#3298c4</color>
+    <color name="in_conversation_sender_far_side">#42424a</color>
+
+    <color name="in_conversation_sender_color1">#4CC2D2</color>
+    <color name="in_conversation_sender_color2">#E6808A</color>
+    <color name="in_conversation_sender_color3">#5AB0E9</color>
+    <color name="in_conversation_sender_color4">#F8C064</color>
+    <color name="in_conversation_sender_color5">#A992D4</color>
+    <color name="in_conversation_sender_color6">#4BC899</color>
+    <color name="in_conversation_sender_color7">#6C9ED5</color>
+    <color name="in_conversation_sender_color8">#61D6D6</color>
+    <color name="in_conversation_sender_color9">#F58F69</color>
+    <color name="in_conversation_sender_color10">#C792D4</color>
+    <color name="in_conversation_sender_color11">#7398BB</color>
+    <color name="in_conversation_sender_color12">#66BBB4</color>
+    <color name="in_conversation_sender_color13">#73D1FA</color>
+    <color name="in_conversation_sender_color14">#C8824B</color>
+    <color name="in_conversation_sender_color15">#D492BB</color>
+    <color name="in_conversation_sender_color16">#B4C58A</color>
+    <color name="in_conversation_sender_color17">#F57769</color>
+    <color name="in_conversation_sender_color18">#F495BF</color>
+    <color name="in_conversation_sender_color19">#84C7C7</color>
+    <color name="in_conversation_sender_color20">#90A7E2</color>
+    <color name="in_conversation_sender_color21">#BF9C7C</color>
+    <color name="in_conversation_sender_color22">#A3C8DD</color>
+    <color name="in_conversation_sender_color23">#D49292</color>
+    <color name="in_conversation_sender_color24">#F7924A</color>
+    <color name="in_conversation_sender_color25">#91CFAC</color>
+    <color name="in_conversation_sender_color26">#DDA3A3</color>
+    <color name="in_conversation_sender_color27">#FF8C8C</color>
+    <color name="in_conversation_sender_color28">#A8CBC0</color>
+    <color name="in_conversation_sender_color29">#CFA6B8</color>
+    <color name="in_conversation_sender_color30">#FAA97A</color>
+    <color name="in_conversation_sender_color31">#BFB37C</color>
+
+    <array name="in_conversation_senders_colors">
+        <item>@color/in_conversation_sender_color1</item>
+        <item>@color/in_conversation_sender_color2</item>
+        <item>@color/in_conversation_sender_color3</item>
+        <item>@color/in_conversation_sender_color4</item>
+        <item>@color/in_conversation_sender_color5</item>
+        <item>@color/in_conversation_sender_color6</item>
+        <item>@color/in_conversation_sender_color7</item>
+        <item>@color/in_conversation_sender_color8</item>
+        <item>@color/in_conversation_sender_color9</item>
+        <item>@color/in_conversation_sender_color10</item>
+        <item>@color/in_conversation_sender_color11</item>
+        <item>@color/in_conversation_sender_color12</item>
+        <item>@color/in_conversation_sender_color13</item>
+        <item>@color/in_conversation_sender_color14</item>
+        <item>@color/in_conversation_sender_color15</item>
+        <item>@color/in_conversation_sender_color16</item>
+        <item>@color/in_conversation_sender_color17</item>
+        <item>@color/in_conversation_sender_color18</item>
+        <item>@color/in_conversation_sender_color19</item>
+        <item>@color/in_conversation_sender_color20</item>
+        <item>@color/in_conversation_sender_color21</item>
+        <item>@color/in_conversation_sender_color22</item>
+        <item>@color/in_conversation_sender_color23</item>
+        <item>@color/in_conversation_sender_color24</item>
+        <item>@color/in_conversation_sender_color25</item>
+        <item>@color/in_conversation_sender_color26</item>
+        <item>@color/in_conversation_sender_color27</item>
+        <item>@color/in_conversation_sender_color28</item>
+        <item>@color/in_conversation_sender_color29</item>
+        <item>@color/in_conversation_sender_color30</item>
+        <item>@color/in_conversation_sender_color31</item>
+    </array>
+
+    <color name="mqtt_dev_mode_connected_color">#5BFF33</color>
+    <color name="mqtt_dev_mode_disconnected_color">#FF3F33</color>
+    <color name="mqtt_dev_mode_connecting_color">#FFF933</color>
+    <color name="mqtt_dev_mode_not_initialized_color">#AC33FF</color>
+
+    <color name="ef_colorPrimary" tools:override="true">@color/main_navigation_color_primary_dark</color>
+    <color name="ef_colorPrimaryDark" tools:override="true">@color/main_navigation_color_primary_dark</color>
+    <!--<color name="ef_colorAccent" tools:override="true">@color/light_blue</color>-->
+    <color name="ef_colorTextPrimary" tools:override="true">#ffffffff</color>
+
+    <color name="main_navigation_fab_background_tint">#3298c4</color>
+    <color name="main_navigation_color_primary_dark">#00597b</color>
+    <color name="application_color_primary">#1c83ac</color>
+
+    <color name="tab_color">#00fff4</color>
+    <color name="tab_color_unselected">#8FFF</color>
+
+    <color name="whats_new_video_screen_background_color">#0883d1</color>
+
+    <color name="message_info_grey_background">#F8F8F8</color>
+
+    <color name="message_header_text_normal">#9b9b9b</color>
+    <color name="message_header_text_new_message">#f25a6b</color>
+    <color name="message_header_line_normal">#f4f4f4</color>
+    <color name="message_header_line_new_message">#fabdc4</color>
+
+
+    <color name="voicemail_record_bg_color_red">#f25a6b</color>
+    <color name="voicemail_record_bg_color_blue">#3298c4</color>
+    <color name="avatar_group_oval_color">#c79fd5</color>
+    <color name="avatar_contact_oval_color">#3298c4</color>
+    <color name="contact_selected_circle">#00b9b1</color>
+    <color name="navigation_fragment_bg_gray">#f5f6f8</color>
+    <color name="prussian_blue">#004d71</color>
+    <color name="rosy_pink">#f25a6b</color>
+    <color name="greyish_brown">#4a4a4a</color>
+    <color name="edit_text_hint">#b6b6b6</color>
+
+    <color name="battleship_grey">#667486</color>
+    <color name="warm_grey">#9b9b9b</color>
+
+    <color name="ic_stroke_color_default">#9B9B9B</color>
+    <color name="ic_stroke_color_permission">#CECECE</color>
+    <color name="ic_stroke_color_selected">#4CC3D2</color>
+    <color name="ic_stroke_color_selected_text">#4CC3D2</color>
+
+    <color name="progress_attachment">#3CBBCD</color>
+
+
+    <color name="message_cell_line_separator">#f9f9f9</color>
+
+    <color name="cards_date_header_color">#737373</color>
+
+    <color name="search_highlight">#b2fffb</color>
+
+    <color name="link_preview_action_title_color_default">#3a3b3f</color>
+    <color name="link_preview_action_title_color_error">#f7737e</color>
+</resources>

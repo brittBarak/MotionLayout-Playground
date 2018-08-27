@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_video_active" android:state_enabled="true" android:state_activated="true"/> <!-- pressed -->
+    <item android:drawable="@drawable/btn_video_not_active" android:state_enabled="true" android:state_activated="false" /> <!-- default -->
+    <item android:drawable="@drawable/btn_video_in_video_disabled" android:state_enabled="false" android:state_activated="false"/> <!-- disabled -->
+    <item android:drawable="@drawable/btn_video_in_video_disabled" android:state_enabled="false" android:state_activated="true"/> <!-- disabled -->
+</selector>
+
+
+

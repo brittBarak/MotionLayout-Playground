@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/set_keypad_up_step5"
+        motion:constraintSetStart="@id/set_keypad_down_step5"
+        motion:duration="1000">
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/btn_drag_keypad"
+            motion:touchAnchorSide="top" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/set_keypad_down_step5">
+        <Constraint
+            android:id="@+id/phone_call_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/britt_circle"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="saturation"
+                motion:customFloatValue="1.5"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@id/phone_call_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Britt Barak"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/phone_call_avatar" >
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customDimension="15sp"/>
+        </Constraint>
+
+
+        <Constraint
+            android:id="@+id/phone_call_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:alpha="0.8"
+            android:gravity="top"
+            android:text="Nexmo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/phone_call_name" >
+            <!--<CustomAttribute-->
+            <!--motion:attributeName="textSize"-->
+            <!--motion:customDimension="8sp"/>-->
+        </Constraint>
+
+        <Constraint
+            android:id="@id/keypad_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:background="@android:color/white"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+
+
+        <Constraint
+            android:id="@+id/btn_drag_keypad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:src="@drawable/btn_keypad_pressed"
+            motion:layout_constraintBottom_toTopOf="@+id/btn_hang_up"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/btn_hang_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/set_keypad_up_step5">
+        <Constraint
+            android:id="@id/phone_call_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/britt_circle"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" >
+        <CustomAttribute
+            motion:attributeName="saturation"
+            motion:customFloatValue="0.2"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@id/phone_call_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Britt Barak"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            motion:layout_constraintStart_toEndOf="@+id/phone_call_avatar"
+            motion:layout_constraintTop_toTopOf="@+id/phone_call_avatar" >
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customDimension="8sp"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@id/phone_call_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:alpha="0.8"
+            android:text="Nexmo"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            motion:layout_constraintBottom_toBottomOf="@+id/phone_call_name"
+            motion:layout_constraintStart_toEndOf="@+id/phone_call_name" >
+            <!--<CustomAttribute-->
+            <!--motion:attributeName="textSize"-->
+            <!--motion:customDimension="6sp"/>-->
+        </Constraint>
+
+
+        <Constraint
+            android:id="@+id/keypad_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@id/btn_drag_keypad"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_keypad_pressed"
+            motion:layout_constraintBottom_toTopOf="@id/keypad_layout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/keypad_layout" />
+
+        <Constraint
+            android:id="@id/btn_hang_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:rotation="360"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+
+    </ConstraintSet>
+</MotionScene>

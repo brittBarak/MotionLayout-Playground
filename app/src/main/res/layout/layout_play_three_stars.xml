@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    motion:layoutDescription="@xml/scene_drag_up">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        motion:altSrc="@drawable/ic_star_black_24dp"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.18"
+        motion:layout_constraintStart_toEndOf="@+id/button2"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintVertical_bias="0.26" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        motion:altSrc="@drawable/ic_star_black_24dp"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        motion:altSrc="@drawable/ic_star_black_24dp"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.15"
+        motion:layout_constraintStart_toEndOf="@+id/button"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintVertical_bias="0.79" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/square"
+        android:alpha="1"
+        motion:layout_constraintLeft_toLeftOf="parent"
+        motion:layout_constraintRight_toRightOf="parent"
+        motion:layout_constraintTop_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="in_call_mute">Mute</string>
+    <string name="in_call_keypad">Keypad</string>
+    <string name="in_call_speaker">Speaker</string>
+    <string name="in_call_device">Earpiece</string>
+    <string name="in_call_bluetooth">Bluetooth</string>
+    <string name="in_call_add_call">Add call</string>
+    <string name="in_call_merge_call">Merge call</string>
+    <string name="in_call_transfer">Transfer</string>
+    <string name="in_call_audio_video_upgrade">Video</string>
+    <string name="in_call_hold">Hold</string>
+    <string name="in_call_on_hold">HOLD</string>
+    <string name="in_call_ringing">Ringing</string>
+    <string name="in_call_calling">Calling</string>
+    <string name="in_call_limited_network_availability">Limited network availability</string>
+    <string name="call_waiting_answer_end">Answer &amp; End</string>
+    <string name="call_waiting_answer_hold">Answer &amp; Hold</string>
+    <string name="call_waiting_reject_message">Reject &amp; Message</string>
+    <string name="call_waiting_decline">Decline</string>
+    <string name="in_call_choose_source">Choose source</string>
+    <string-array name="in_call_sources_with_bluetooth">
+        <item>Earpiece</item>
+        <item>Speaker</item>
+        <item>Bluetooth</item>
+    </string-array>
+    <string-array name="in_call_sources_without_bluetooth">
+        <item>Earpiece</item>
+        <item>Speaker</item>
+    </string-array>
+    <string-array name="in_call_options_for_action">
+        <item>Choose from contacts</item>
+        <item>Open dialer</item>
+    </string-array>
+    <string name="in_call_transfer_finish">Your call has been transferred to </string>
+    <string name="in_call_video_upgrade_failed">Video is not supported by the receiving device. Call is audio only.</string>
+    <string name="in_call_video_upgrade_failed_voicemail">You have reached the voicemail of %1$s. Please leave a message.</string>
+    <string name="in_call_ok">@string/general_OK</string>
+    <string name="in_call_hide">Hide</string>
+    <string name="in_call_add_ellipsis"> %s …</string>
+    <string name="in_call_add_ellipsis_two_words">%1$s %2$s …</string>
+
+    <!--Content Descriptors-->
+    <string name="in_call_end_call_cd">End Call</string>
+    <string name="in_call_mute_cd">Mute</string>
+    <string name="in_call_video_camera_cd">Camera</string>
+    <string name="in_call_video_swap_camera_cd">Swap Camera</string>
+    <string name="in_call_video_media_source_cd">Choose Media Source</string>
+    <string name="in_call_incoming_waiting_audio_call_label">Vonage Audio Call</string>
+    <string name="in_call_incoming_waiting_video_call_label">Vonage Video Call</string>
+    <string name="in_call_video_no_camera_permission_rational_dialog_title">Enable Access to Camera</string>
+    <string name="in_call_video_no_camera_permission_rational_dialog_msg">In order to place video calls, allow access to Camera.</string>
+    <string name="in_call_video_no_camera_permission_settings_dialog_title">Enable Access to Camera</string>
+    <string name="in_call_video_no_camera_permission_settings_dialog_msg">In order to place video calls, go to Settings and allow access to Camera. Settings > Permissions</string>
+    <string name="in_call_video_call_on_hold">Call on Hold</string>
+
+    <string name="in_call_audio_add_call_title">Add call</string>
+    <string name="in_call_audio_transfer_dialog_title">Transfer Call</string>
+</resources>

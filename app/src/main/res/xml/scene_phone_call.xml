@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@layout/layout_keypad_up"
+        motion:constraintSetStart="@layout/layout_keypad_down"
+        motion:duration="1000">
+
+        <!--<Transition-->
+        <!--motion:constraintSetEnd="@id/keypad_up"-->
+        <!--motion:constraintSetStart="@id/keypad_down"-->
+        <!--motion:duration="1000">-->
+
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/btn_drag_keypad"
+            motion:touchAnchorSide="top" />
+
+
+        <KeyFrameSet>
+            <!--Kinda works:-->
+            <!--<KeyAttribute-->
+            <!--android:scaleX="0.5"-->
+            <!--android:scaleY="0.5"-->
+            <!--motion:framePosition="50"-->
+            <!--android:translationX="20dp"-->
+            <!--motion:target="@id/in_call_tv_name" />-->
+
+
+            <!--<KeyPosition-->
+            <!--motion:keyPositionType="parentRelative"-->
+            <!--motion:pathMotionArc="startHorizontal"-->
+            <!--motion:framePosition="20"-->
+            <!--motion:percentX="0.7"-->
+            <!--motion:target="@id/in_call_tv_name"/>
+            -->
+
+            <!--<KeyPosition-->
+            <!--motion:keyPositionType="pathRelative"-->
+            <!--motion:pathMotionArc="startHorizontal"-->
+            <!--motion:framePosition="20"-->
+            <!--motion:percentY="1"-->
+            <!--motion:target="@id/in_call_tv_name"/>-->
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <!--<CustomAttribute-->
+    <!--motion:attributeName="textColor"-->
+    <!--motion:target="@id/in_call_tv_name"-->
+    <!--motion:customColorValue="#D81B60"/>-->
+    <!--<CustomAttribute-->
+    <!--motion:attributeName="textSize"-->
+    <!--motion:target="@id/in_call_tv_name"-->
+    <!--motion:customDimension="12sp"/>-->
+
+</MotionScene>

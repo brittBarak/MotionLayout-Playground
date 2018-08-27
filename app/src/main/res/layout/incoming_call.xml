@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/call_screens_gradient"
+    motion:layoutDescription="@xml/scene_incoming_call">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:lottie_autoPlay="true"
+        motion:layout_constraintTop_toBottomOf="@id/phone_call_label"
+        android:alpha="0.5"
+        motion:lottie_loop="true"
+        motion:lottie_rawRes="@raw/lottie_loading" />
+
+    <ImageView
+        android:id="@+id/phone_call_avatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/britt_circle"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone_call_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Britt Barak"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/phone_call_avatar" />
+
+    <TextView
+        android:id="@+id/phone_call_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:alpha="0.8"
+        android:gravity="top"
+        android:text="Nexmo"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/phone_call_name" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/circle_gradient_red"
+        android:src="@drawable/ic_phone_black_24dp"
+        motion:layout_constraintBottom_toBottomOf="@+id/button"
+        motion:layout_constraintEnd_toStartOf="@+id/button"
+        motion:layout_constraintTop_toTopOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/circle_gradient_yellow"
+        android:src="@drawable/incoming_call_btn_remind"
+        motion:layout_constraintStart_toStartOf="@+id/button"
+        motion:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/circle_gradient_purple"
+        android:src="@drawable/incoming_call_btn_reply_message"
+        motion:layout_constraintBottom_toBottomOf="@+id/button"
+        motion:layout_constraintStart_toEndOf="@+id/button"
+        motion:layout_constraintTop_toTopOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/circle_gradient_blue"
+        android:src="@drawable/incall_btn_video"
+        motion:layout_constraintBottom_toTopOf="@+id/button"
+        motion:layout_constraintEnd_toEndOf="@+id/button"
+        motion:layout_constraintStart_toStartOf="@+id/button" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/incoming_call_btn_answer_main"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@+id/phone_call_label"
+        motion:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

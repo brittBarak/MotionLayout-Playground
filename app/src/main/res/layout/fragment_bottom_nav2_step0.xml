@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="24dp"
+    motion:layoutDescription="@xml/scene_bottom_bar2_step0"
+    motion:layout_constraintBottom_toBottomOf="parent">
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="100dp"
+        android:layout_height="8dp"
+        motion:layout_constraintEnd_toEndOf="@+id/icn_tab_contacts"
+        motion:layout_constraintStart_toStartOf="@+id/icn_tab_contacts"
+        motion:layout_constraintTop_toBottomOf="@+id/icn_tab_contacts"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        tools:background="@color/rosy_pink" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icn_tab_messages"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_icn_chats_black"
+        motion:altSrc="@drawable/ic_icn_chats_grey"
+        motion:layout_constraintBottom_toTopOf="@id/indicator"
+        motion:layout_constraintEnd_toStartOf="@+id/icn_tab_calls"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintHorizontal_weight="1"
+        motion:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icn_tab_calls"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_icn_call_black"
+        motion:altSrc="@drawable/ic_icn_call_grey"
+        motion:layout_constraintBottom_toTopOf="@id/indicator"
+        motion:layout_constraintEnd_toStartOf="@+id/icn_tab_contacts"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintHorizontal_weight="1"
+        motion:layout_constraintStart_toEndOf="@+id/icn_tab_messages" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icn_tab_contacts"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_icn_addressbook_black"
+        motion:altSrc="@drawable/ic_icn_addressbook_grey"
+        motion:layout_constraintBottom_toTopOf="@id/indicator"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintHorizontal_weight="1"
+        motion:layout_constraintStart_toEndOf="@+id/icn_tab_calls" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+

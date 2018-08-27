@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@layout/layout_incoming_opened"
+        motion:constraintSetStart="@layout/layout_incoming_closed"
+        motion:duration="1000">
+
+
+        <OnClick
+            motion:mode="toggle"
+            motion:target="@id/button" />
+
+    </Transition>
+
+
+</MotionScene>

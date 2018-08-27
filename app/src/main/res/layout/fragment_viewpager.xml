@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        motion:layout_constraintBottom_toTopOf="@+id/motionLayout"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintVertical_weight="1" />
+
+    <include layout="@layout/fragment_bottom_nav2_step2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<androidx.constraintlayout.utils.widget.ImageFilterView--><!--android:id="@+id/icn_star"--><!--android:layout_width="64dp"--><!--android:layout_height="64dp"--><!--android:scaleType="centerCrop"--><!--android:layout_margin="16dp"--><!--android:tint="@color/application_color_primary"--><!--android:src="@drawable/ic_star_black_24dp"--><!--motion:layoutDescription="@layout/pager_header" />-->
+
+
+    <!--<android.support.design.widget.TabLayout--><!--android:id="@+id/tabs"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--motion:layout_constraintTop_toBottomOf="@+id/motionLayout">-->
+
+    <!--</android.support.design.widget.TabLayout>-->
+
+
+    <!--</androidx.constraintlayout.motion.widget.MotionLayout>-->

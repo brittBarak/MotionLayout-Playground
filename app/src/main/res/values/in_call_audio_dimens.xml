@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="in_call_remotes_margin_top">10dp</dimen>
+    <dimen name="in_call_keypad_hide_margin_top">13dp</dimen>
+    <dimen name="in_call_transfer_margin_right">0dp</dimen>
+    <dimen name="in_call_transfer_margin_top">0dp</dimen>
+    <dimen name="in_call_transfer_padding">12dp</dimen>
+    <dimen name="in_call_single_caller_margin_top">18dp</dimen>
+    <dimen name="in_call_message_height">30dp</dimen>
+    <dimen name="in_call_message_margin_bottom">10dp</dimen>
+    <dimen name="in_call_all_buttons_height">290dp</dimen>
+    <dimen name="in_call_bottom_buttons_padding_top">15dp</dimen>
+    <dimen name="in_call_audio_end_button_margin_bottom">0dp</dimen>
+</resources>

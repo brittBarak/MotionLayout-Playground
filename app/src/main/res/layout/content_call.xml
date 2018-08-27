@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/fragment_call_phone">
+
+<!--swap is from ImageView for step 5-->
+    <!--<ImageView-->
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/phone_call_avatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/britt_circle"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone_call_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Britt Barak"
+        android:textColor="@color/white"
+        android:textSize="@dimen/caller_name_large"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/phone_call_avatar" />
+
+    <TextView
+        android:id="@+id/phone_call_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:alpha="0.8"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:text="Nexmo"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/caller_label_large"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/phone_call_name" />
+
+
+    <RelativeLayout
+        android:id="@+id/in_call_remotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/in_call_keypad_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="@dimen/in_call_keypad_hide_margin_top"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/in_call_hide"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/in_call_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/in_call_transfer"
+            android:padding="@dimen/in_call_transfer_padding"
+            android:src="@drawable/btn_transfer" />
+
+        <TextView
+            android:id="@+id/in_call_voxip_dev_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/background_black"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/in_call_single_caller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/in_call_single_caller_margin_top"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/in_call_audio_avatar"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/britt_circle" />-->
+
+            <!--android:src="@drawable/ic_star_black_24dp"-->
+            <!--<com.vonage.TimeToCall.ui.AvatarView-->
+            <!--android:id="@+id/in_call_audio_avatar"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--motion:isPresence="false"-->
+            <!--android:layout_gravity="center"-->
+            <!--motion:initialsTextSize="34sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/in_call_tv_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:gravity="center"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="26sp"-->
+            <!--android:text="Britt Barak" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/in_call_tv_label_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginStart="40dp"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_marginEnd="40dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:alpha="0.8"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:gravity="top"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="Nexmo" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/in_call_with_call_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/in_call_top_header"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingStart="20dp"-->
+                <!--android:paddingEnd="0dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/name_upper_header"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/transparent"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/label_upper_header"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:alpha="0.6"-->
+                    <!--android:background="@color/transparent"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="15sp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/in_call_bottom_header"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingStart="20dp"-->
+                <!--android:paddingEnd="0dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/name_bottom_header"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/transparent"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/label_bottom_header"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:alpha="0.6"-->
+                    <!--android:background="@color/transparent"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="15sp" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/in_call_dialer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/in_call_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/in_call_message_height"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="@dimen/in_call_message_margin_bottom"
+        android:background="@drawable/in_call_message_ellipse"
+        android:clickable="false"
+        android:fontFamily="Roboto-regular"
+        android:gravity="center"
+        android:text="@string/in_call_limited_network_availability"
+        android:textColor="@drawable/in_call_text_color"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        motion:layout_constraintBottom_toTopOf="@id/in_call_all_buttons"
+        motion:layout_constraintLeft_toLeftOf="parent"
+        motion:layout_constraintRight_toRightOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/in_call_all_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="72dp"
+        motion:layout_constraintBottom_toTopOf="@id/btn_hang_up"
+        motion:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/in_call_buttons_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/in_call_up_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/in_call_audio_mute_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/in_call_mute"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/in_call_mute"
+                android:textColor="@drawable/in_call_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_in_call_video_upgrade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/in_call_audio_video_upgrade"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/in_call_audio_video_upgrade"
+                android:textColor="@drawable/in_call_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_in_call_media"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/btn_incall_device"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/in_call_device"
+                android:textColor="@drawable/in_call_text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/in_call_bottom_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_call_up_buttons"
+            android:paddingTop="@dimen/in_call_bottom_buttons_padding_top"
+            android:paddingBottom="@dimen/in_call_bottom_buttons_padding_top"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_in_call_add_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/in_call_add_call"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/in_call_add_call"
+                android:textColor="@drawable/in_call_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_in_call_merge_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/in_call_merge_call"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/in_call_merge_call"
+                android:textColor="@drawable/in_call_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_in_call_hold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/in_call_hold"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/in_call_hold"
+                android:textColor="@drawable/in_call_text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/keypad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="64dp"
+        android:visibility="gone"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent">
+
+        <include
+            layout="@layout/keypad"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="8dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btn_drag_keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:src="@drawable/btn_keypad_pressed"
+        motion:layout_constraintBottom_toTopOf="@id/btn_hang_up"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_hang_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/in_call_end_call_icn"
+        motion:backgroundTint="@color/rosy_pink"
+        motion:fabSize="normal"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent" />
+
+
+</merge>

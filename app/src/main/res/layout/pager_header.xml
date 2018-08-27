@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nexmo.example.britt.motionlayout.UI.ViewpagerHeader
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    motion:layoutDescription="@xml/scene_pager_header">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icn_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_star_black_24dp" />
+</com.nexmo.example.britt.motionlayout.UI.ViewpagerHeader>
