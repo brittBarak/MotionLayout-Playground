@@ -55,6 +55,10 @@
                     android:id="@+id/tabs_4"
                     android:title="Tabs Step 4" />
 
+                <item
+                    android:id="@+id/tabs_5"
+                    android:title="Tabs Step 5" />
+
             </group>
         </menu>
     </item>

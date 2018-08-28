@@ -109,6 +109,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
 
+            R.id.tabs_5 -> {
+                fragment = PagerNavFragment.newInstance(R.layout.fragment_bottom_nav2_step3)
+
+            }
+
 //            R.id.recyclerview_1 -> {
 //                fragment = RecyclerViewFragment.newInstance(R.layout.fragment_recyclerview)
 //

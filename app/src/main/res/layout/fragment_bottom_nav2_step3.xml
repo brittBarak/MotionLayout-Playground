@@ -4,21 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
+    android:layout_height="match_parent"
     android:layout_gravity="bottom"
     android:layout_marginBottom="24dp"
-    motion:layoutDescription="@xml/scene_bottom_bar2_step2"
+    motion:layoutDescription="@xml/scene_bottom_bar2_step3"
     motion:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent" />
 
     <com.nexmo.example.britt.motionlayout.UI.MyImageFilterView
         android:id="@+id/indicator"
-        android:layout_width="100dp"
-        android:layout_height="8dp"
-        motion:layout_constraintBottom_toBottomOf="parent"
-        motion:layout_constraintEnd_toEndOf="@+id/icn_tab_contacts"
-        motion:layout_constraintStart_toStartOf="@+id/icn_tab_contacts"
-        motion:layout_constraintTop_toBottomOf="@+id/icn_tab_contacts"
-        tools:background="@color/rosy_pink" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        motion:layout_constraintBottom_toBottomOf="@id/icn_tab_contacts"
+        motion:layout_constraintEnd_toEndOf="@id/icn_tab_contacts"
+        motion:layout_constraintStart_toStartOf="@id/icn_tab_contacts"
+        motion:layout_constraintTop_toBottomOf="@id/icn_tab_contacts"
+        motion:myDrawable="0" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/icn_tab_messages"
@@ -58,7 +67,6 @@
         motion:layout_constraintHorizontal_bias="0.5"
         motion:layout_constraintHorizontal_weight="1"
         motion:layout_constraintStart_toEndOf="@+id/icn_tab_calls" />
-
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
 

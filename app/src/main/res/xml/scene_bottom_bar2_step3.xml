@@ -17,17 +17,16 @@
 
         <KeyFrameSet>
 
-
             <!--indicator : -->
             <KeyAttribute
-                android:scaleX="1.5"
-                android:scaleY="22"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
                 motion:framePosition="25"
                 motion:target="@id/indicator" />
             <KeyPosition
                 motion:framePosition="25"
                 motion:keyPositionType="deltaRelative"
-                motion:percentY="1.2"
+                motion:percentY="1"
                 motion:target="@id/indicator" />
 
 
@@ -35,30 +34,32 @@
                 motion:framePosition="50"
                 motion:target="@id/indicator">
                 <CustomAttribute
-                    motion:attributeName="backgroundColor"
-                    motion:customColorValue="@color/yellow" />
+                    motion:attributeName="myDrawable"
+                    motion:customIntegerValue="1" />
             </KeyAttribute>
             <KeyPosition
                 motion:framePosition="50"
-                motion:keyPositionType="deltaRelative"
-                motion:percentY="1"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.86"
                 motion:target="@id/indicator" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
+                motion:pathMotionArc="startHorizontal"
                 motion:framePosition="50"
                 motion:target="@id/indicator" />
 
-            <!--enlarge indicator-->
+            <!--shrink indicator-->
             <KeyAttribute
-                android:scaleX="1.5"
-                android:scaleY="22"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
                 motion:framePosition="75"
                 motion:target="@id/indicator" />
             <KeyPosition
                 motion:framePosition="75"
                 motion:keyPositionType="deltaRelative"
-                motion:percentY="1.2"
+                motion:percentY="1"
+                motion:pathMotionArc="startVertical"
                 motion:target="@id/indicator" />
 
 
@@ -71,7 +72,7 @@
                 motion:target="@id/icn_tab_messages">
                 <CustomAttribute
                     motion:attributeName="crossfade"
-                    motion:customFloatValue="1" />
+                    motion:customFloatValue="0" />
             </KeyAttribute>
 
             <KeyAttribute
@@ -91,7 +92,7 @@
                 motion:target="@id/icn_tab_contacts">
                 <CustomAttribute
                     motion:attributeName="crossfade"
-                    motion:customFloatValue="1" />
+                    motion:customFloatValue="0" />
             </KeyAttribute>
 
 
@@ -102,27 +103,23 @@
 
     <ConstraintSet android:id="@id/start_bottombar">
         <Constraint
-            android:id="@id/indicator"
-            android:layout_width="84dp"
-            android:layout_height="8dp"
+            android:id="@+id/indicator"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="@+id/icn_tab_messages"
-            motion:layout_constraintStart_toStartOf="@+id/icn_tab_messages">
-
+            motion:layout_constraintEnd_toEndOf="@id/icn_tab_messages"
+            motion:layout_constraintStart_toStartOf="@id/icn_tab_messages">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/rosy_pink" />
-
+                motion:attributeName="myDrawable"
+                motion:customIntegerValue="2" />
         </Constraint>
-
 
         <Constraint
             android:id="@id/icn_tab_messages"
             android:layout_width="@dimen/icon_big"
             android:layout_height="@dimen/icon_big"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintBottom_toTopOf="@id/indicator"
-            motion:layout_constraintEnd_toStartOf="@+id/icn_tab_calls"
+            motion:layout_constraintEnd_toStartOf="@id/icn_tab_calls"
             motion:layout_constraintHorizontal_bias="0.5"
             motion:layout_constraintHorizontal_weight="1"
             motion:layout_constraintStart_toStartOf="parent">
@@ -135,7 +132,6 @@
             android:id="@id/icn_tab_calls"
             android:layout_width="@dimen/icon_small"
             android:layout_height="@dimen/icon_small"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintBottom_toTopOf="@id/indicator"
             motion:layout_constraintEnd_toStartOf="@+id/icn_tab_contacts"
             motion:layout_constraintHorizontal_bias="0.5"
@@ -150,7 +146,6 @@
             android:id="@id/icn_tab_contacts"
             android:layout_width="@dimen/icon_small"
             android:layout_height="@dimen/icon_small"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintBottom_toTopOf="@id/indicator"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintHorizontal_bias="0.5"
@@ -166,18 +161,17 @@
 
 
     <ConstraintSet android:id="@+id/end_bottombar">
+
         <Constraint
             android:id="@id/indicator"
-            android:layout_width="84dp"
-            android:layout_height="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="@+id/icn_tab_contacts"
-            motion:layout_constraintStart_toStartOf="@+id/icn_tab_contacts">
-
+            motion:layout_constraintEnd_toEndOf="@id/icn_tab_contacts"
+            motion:layout_constraintStart_toStartOf="@id/icn_tab_contacts">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@color/colorPrimary" />
-
+                motion:attributeName="myDrawable"
+                motion:customIntegerValue="0" />
         </Constraint>
 
 
@@ -185,8 +179,8 @@
             android:id="@id/icn_tab_messages"
             android:layout_width="@dimen/icon_small"
             android:layout_height="@dimen/icon_small"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintBottom_toTopOf="@id/indicator"
+
             motion:layout_constraintEnd_toStartOf="@+id/icn_tab_calls"
             motion:layout_constraintHorizontal_bias="0.5"
             motion:layout_constraintHorizontal_weight="1"
@@ -200,8 +194,8 @@
             android:id="@id/icn_tab_calls"
             android:layout_width="@dimen/icon_small"
             android:layout_height="@dimen/icon_small"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintBottom_toTopOf="@id/indicator"
+
             motion:layout_constraintEnd_toStartOf="@+id/icn_tab_contacts"
             motion:layout_constraintHorizontal_bias="0.5"
             motion:layout_constraintHorizontal_weight="1"
@@ -215,7 +209,6 @@
             android:id="@id/icn_tab_contacts"
             android:layout_width="@dimen/icon_big"
             android:layout_height="@dimen/icon_big"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintBottom_toTopOf="@id/indicator"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintHorizontal_bias="0.5"
